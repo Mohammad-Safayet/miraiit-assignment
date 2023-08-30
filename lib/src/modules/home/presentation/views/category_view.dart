@@ -8,7 +8,7 @@ class CategoryView extends StatelessWidget {
     Key? key,
     required this.categoryRepository,
   }) : super(key: key);
-
+/// The repository responsible for providing new arrival item data.
   final CategoryRepository categoryRepository;
 
   @override

@@ -23,7 +23,7 @@ class ItemDetailScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Center(
                 child: Image.asset(
                   "assets/cooking.png",
@@ -32,16 +32,16 @@ class ItemDetailScreen extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Text(
                 item.name,
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Text('Price: \$${item.price.toStringAsFixed(2)}'),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Text('Metric: ${item.metric.name} (${item.metric.amount})'),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               if (item.discount != null)
                 Text('Discount: ${item.discount!.percentage}% off'),
             ],

@@ -9,6 +9,7 @@ class HotItemView extends StatelessWidget {
     required this.homeRepository,
   }) : super(key: key);
 
+  /// The repository responsible for providing new arrival item data.
   final HomeRepository homeRepository;
 
   @override

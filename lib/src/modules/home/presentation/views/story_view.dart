@@ -4,6 +4,14 @@ import 'package:miraiit_assignment/src/core/constants/app_values.dart';
 
 import 'package:miraiit_assignment/src/modules/home/domain/repositories/home_repository.dart';
 
+/// This widget represents a horizontal story view that displays a list of images.
+///
+/// The images are fetched asynchronously from a JSON file using the provided
+/// `HomeRepository` instance. This widget is typically used to showcase dynamic
+/// stories within an e-commerce app's homepage.
+///
+/// The widget uses a `FutureBuilder` to manage the asynchronous loading of data
+/// and displays a loading indicator or error image if necessary.
 class StroyView extends StatefulWidget {
   const StroyView({
     Key? key,
